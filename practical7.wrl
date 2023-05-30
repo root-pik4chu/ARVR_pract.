@@ -1,0 +1,81 @@
+#VRML V2.0 utf8 
+
+DEF roof Transform {
+  children[ 
+    Shape{ appearance Appearance { material Material {}} 
+      geometry Extrusion{ 
+        crossSection [ -5 -5, -5 5, 5 5, 5 -5, -5 -5] 
+        spine [0 -2 0 , 0 2 0 ]
+        scale [1 1, 0 0]
+	} 
+       }
+     ]
+   }
+
+DEF base Transform {
+  translation 0 -4 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 0 1 # blue
+        }
+      }
+      geometry Box {
+        size 7 5 7
+        solid FALSE
+      }
+    }
+  ]
+}
+
+DEF door Transform {
+  translation 3.3 -5 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 0 0.8 
+        }
+      }
+      geometry Box {
+        size 0.5 3 2
+        solid TRUE
+      }
+    }
+  ]
+}
+
+DEF window1 Transform {
+  translation 0 -4.3 3.5
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 0 
+        }
+      }
+      geometry Box {
+        size 2.5 2.5 0.3
+        solid TRUE
+      }
+    }
+  ]
+}
+
+DEF window2 Transform {
+  translation 0 -4.3 -3.5
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 0 
+        }
+      }
+      geometry Box {
+        size 2.5 2.5 0.3
+        solid TRUE
+      }
+    }
+  ]
+}

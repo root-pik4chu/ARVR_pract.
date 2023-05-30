@@ -1,0 +1,20 @@
+#VRML V2.0 utf8
+  
+
+
+
+
+Shape{
+	appearance Appearance { 
+			texture ImageTexture { 
+				url "img.jpg" 
+				repeatS FALSE
+				repeatT FALSE
+			}
+  
+	}
+	geometry Sphere{
+	
+	}
+	}
+

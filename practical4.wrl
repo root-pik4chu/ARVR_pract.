@@ -1,0 +1,15 @@
+#VRML V2.0 utf8
+
+Shape {
+  appearance Appearance {
+    material Material {
+      diffuseColor 0 1 0 # green
+    }
+  }
+  geometry Cylinder {
+    height 5 # desired height of the cylinder
+    radius 2 # desired radius of the cylinder
+   
+  }
+}
+
